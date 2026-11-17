@@ -40,7 +40,6 @@
 - [FAQ](#faq)
 - [Building from source](#building-from-source)
 - [Project structure](#project-structure)
-- [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License and disclaimer](#license-and-disclaimer)
 
@@ -266,16 +265,6 @@ ComicArchiveConverter/
 ├── build-release.bat / .ps1              One-click release zip
 └── THIRD-PARTY-NOTICES.md                Licences of the libraries used
 ```
-
-## Roadmap
-
-- [ ] JPEG XL images
-- [ ] Optional image resizing / re-compression for e-readers
-- [ ] Thumbnail of the first page in the preview
-- [ ] Convert several comics in parallel
-- [ ] Edit ComicInfo.xml fields (writer, year, summary) before converting
-- [ ] Command-line mode for scripting
-- [ ] Dark mode
 
 ## Contributing
 
