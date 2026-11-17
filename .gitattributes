@@ -1,0 +1,13 @@
+# Normalise line endings: Git stores LF, and checks text files out with the
+# line endings your system expects. Batch files must keep Windows (CRLF) endings.
+* text=auto
+*.cs     text diff=csharp
+*.csproj text
+*.sln    text eol=crlf
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+*.ps1    text eol=crlf
+*.md     text
+*.png    binary
+*.jpg    binary
+*.ico    binary

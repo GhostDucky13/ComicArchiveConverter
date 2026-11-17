@@ -1,0 +1,57 @@
+# ---------------------------------------------------------------------------
+# Files Git should never track. Build output, personal IDE settings and
+# test data stay on your PC; only source code goes to GitHub.
+# ---------------------------------------------------------------------------
+
+# Build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+publish/
+artifacts/
+*.partial-*
+
+# Visual Studio (your personal window layout, breakpoints, caches)
+.vs/
+*.user
+*.suo
+*.userprefs
+*.rsuser
+*.sln.docstates
+*.pubxml.user
+
+# JetBrains Rider / VS Code
+.idea/
+*.sln.iml
+.vscode/*
+!.vscode/extensions.json
+
+# Test results and coverage
+[Tt]est[Rr]esult*/
+*.trx
+coverage*.xml
+*.coverage
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+
+# Operating system junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Never commit comics or archives you use for testing (copyright + repo size)
+*.cbz
+*.cbr
+*.rar
+*.zip
+test-comics/
+
+# ...except the tiny sample archives the automated tests need
+!tests/**/Assets/**

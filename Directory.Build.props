@@ -1,0 +1,20 @@
+<!--
+  Directory.Build.props is picked up automatically by every project in this folder and below.
+  Anything set here applies to the Core library, the Windows app and the tests, so the version
+  number and author only need to be changed in ONE place.
+-->
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Version, author and copyright: shown in the .exe's file properties and used in the zip name. -->
+    <Version>2.1.0</Version>
+    <Authors>GhostDucky13</Authors>
+    <Company>GhostDucky13</Company>
+    <Product>Comic Archive Converter</Product>
+    <Copyright>Copyright (c) 2026 GhostDucky13</Copyright>
+    <RepositoryUrl>https://github.com/GhostDucky13/ComicArchiveConverter</RepositoryUrl>
+  </PropertyGroup>
+</Project>

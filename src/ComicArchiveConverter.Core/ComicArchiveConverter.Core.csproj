@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    The Core library holds all of the real work (scanning, sorting, zipping, verifying).
+    It targets plain net8.0, so it has no Windows dependency and can be unit tested anywhere.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>ComicArchiveConverter.Core</RootNamespace>
+    <AssemblyName>ComicArchiveConverter.Core</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Reads RAR (CBR), 7-Zip (CB7), TAR (CBT) and ZIP archives. MIT licence. -->
+    <PackageReference Include="SharpCompress" Version="0.41.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="ComicArchiveConverter.Tests" />
+  </ItemGroup>
+
+</Project>

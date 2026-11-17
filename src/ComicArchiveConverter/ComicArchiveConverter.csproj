@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- The Windows desktop app: the window, buttons and dialogs. All real work happens in Core. -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>ComicArchiveConverter</RootNamespace>
+    <AssemblyName>ComicArchiveConverter</AssemblyName>
+    <AssemblyTitle>Comic Archive Converter</AssemblyTitle>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+
+    <!-- The icon shown for the .exe in Explorer and on the taskbar. -->
+    <ApplicationIcon>Resources\app.ico</ApplicationIcon>
+
+    <!-- Lets this project compile on Linux/macOS too (used by the GitHub build check). -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Also embed the icon inside the program so the window and header can draw it. -->
+    <EmbeddedResource Include="Resources\app.ico" LogicalName="ComicArchiveConverter.app.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ComicArchiveConverter.Core\ComicArchiveConverter.Core.csproj" />
+  </ItemGroup>
+
+</Project>
